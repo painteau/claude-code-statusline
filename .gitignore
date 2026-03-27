@@ -1,0 +1,3 @@
+claude-usage.conf
+.usage-cache*
+.auth-email-cache*

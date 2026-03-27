@@ -1,0 +1,17 @@
+# Claude Code status line — usage tracking config
+# Copy to ~/.claude/claude-usage.conf and fill in your credentials
+#
+# How to find these values:
+#   CLAUDE_ORG_ID    : open claude.ai, check any XHR request to /api/organizations/<id>/...
+#                      or look at the cookie "lastActiveOrg"
+#   CLAUDE_SESSION_KEY: DevTools → Application → Cookies → claude.ai → sessionKey
+#
+# The session key expires periodically. When the usage segment disappears, renew it.
+# Store these credentials securely (e.g. in a secrets manager) — never commit this file.
+
+# Fallback account when `claude auth status` is unavailable
+CLAUDE_ACTIVE_ACCOUNT="you@example.com"
+
+# Your claude.ai credentials
+CLAUDE_ORG_ID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+CLAUDE_SESSION_KEY="sk-ant-sid02-..."
