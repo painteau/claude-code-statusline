@@ -1,4 +1,4 @@
-# Claude Code Status Line — Gruvbox Dark
+# 🎨 Claude Code Status Line — Gruvbox Dark
 
 A custom status line for [Claude Code](https://claude.ai/code) using the Gruvbox Dark color scheme with Powerline separators and Nerd Font icons.
 
@@ -6,7 +6,7 @@ A custom status line for [Claude Code](https://claude.ai/code) using the Gruvbox
  …/git/my-project  main   Sonnet 4.6   110k [████░░░░░░] 55%   you@example.com  5h:45% ( 2h30) / 7d:23% ( 4d)  $2.89  45s / 1m23s
 ```
 
-## Segments
+## 📦 Segments
 
 | # | Content | Color |
 |---|---------|-------|
@@ -21,19 +21,19 @@ The context bar color changes dynamically:
 
 | Usage | Color |
 |-------|-------|
-| 0–24% | Green |
-| 25–49% | Yellow |
-| 50–74% | Orange |
-| 75–100% | Red |
+| 0–24% | 🟢 Green |
+| 25–49% | 🟡 Yellow |
+| 50–74% | 🟠 Orange |
+| 75–100% | 🔴 Red |
 
-## Requirements
+## ✅ Requirements
 
 - **Nerd Font Mono** — [JetBrainsMono Nerd Font Mono](https://www.nerdfonts.com/font-downloads) recommended
 - **bash** — Git Bash on Windows, native on Linux/macOS
 - **grep, sed, awk, curl** — included with Git for Windows and most Linux distros
 - **`claude` CLI** in PATH — optional, used to detect the active account email
 
-## Installation
+## 🚀 Installation
 
 ### 1. Copy the files
 
@@ -90,7 +90,7 @@ Example for Windows Terminal (`settings.json`):
 
 ---
 
-## Usage tracking (optional)
+## 📊 Usage tracking (optional)
 
 The purple segment shows your claude.ai usage against the 5-hour and 7-day limits, along with the time until reset. It requires credentials from your browser session.
 
@@ -116,7 +116,7 @@ CLAUDE_SESSION_KEY="sk-ant-sid02-..."
 
 > The session key expires periodically. When the usage segment disappears, renew it from your browser.
 
-### Caching
+### ⚡ Caching
 
 | Cache file | TTL | Purpose |
 |-----------|-----|---------|
@@ -130,7 +130,7 @@ rm ~/.claude/.usage-cache* ~/.claude/.auth-email-cache*
 
 ---
 
-## Troubleshooting
+## 🔧 Troubleshooting
 
 ### Icons not showing (squares or question marks)
 
@@ -164,7 +164,7 @@ echo '{"cwd":"/home/user/project"}' | bash ~/.claude/statusline.sh
 
 ---
 
-## How it works
+## 🔍 How it works
 
 Claude Code calls the status line command on every UI update (tool calls, streaming tokens, state changes). The script reads a JSON object from stdin containing session data, parses it with `grep`/`sed`/`awk` (no `jq` dependency), and outputs ANSI-colored text.
 
@@ -191,3 +191,9 @@ Claude Code calls the status line command on every UI update (tool calls, stream
 ### No `jq` dependency
 
 The script intentionally avoids `jq` since Claude Code runs commands with a minimal PATH where `jq` may not be available. All JSON parsing is done with `grep` and `sed`.
+
+---
+
+## 📄 License
+
+MIT — see [LICENSE](LICENSE)
