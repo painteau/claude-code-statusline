@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Claude Code status line — Gruvbox Dark theme with Powerline separators
+# Claude Code status line — inspired by Starship gruvbox-rainbow preset
 # Segments: cwd | git branch | model | context bar | tokens | claude.ai usage | cost | duration
 #
 # Requirements: Git Bash (Windows) or any bash (Linux/macOS), grep, sed, awk, curl
@@ -11,7 +11,7 @@
 input=$(cat)
 
 # ---------------------------------------------------------------------------
-# Gruvbox Dark palette — 24-bit ANSI escape helpers
+# Color palette — 24-bit ANSI escape helpers
 # ---------------------------------------------------------------------------
 fg() { local r=$((16#${1:1:2})) g=$((16#${1:3:2})) b=$((16#${1:5:2})); printf '\033[38;2;%d;%d;%dm' $r $g $b; }
 bg() { local r=$((16#${1:1:2})) g=$((16#${1:3:2})) b=$((16#${1:5:2})); printf '\033[48;2;%d;%d;%dm' $r $g $b; }

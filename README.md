@@ -1,6 +1,6 @@
-# 🎨 Claude Code Status Line — Gruvbox Dark
+# 🎨 Claude Code Status Line
 
-A custom status line for [Claude Code](https://claude.ai/code) using the Gruvbox Dark color scheme with Powerline separators and Nerd Font icons.
+A custom status line for [Claude Code](https://claude.ai/code) inspired by the Starship [gruvbox-rainbow](https://starship.rs/presets/gruvbox-rainbow) preset, with Powerline separators and Nerd Font icons.
 
 ```
  …/git/my-project  main   Sonnet 4.6   110k [████░░░░░░] 55%   you@example.com  5h:45% ( 2h30) / 7d:23% ( 4d)  $2.89  45s / 1m23s
