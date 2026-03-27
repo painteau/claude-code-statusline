@@ -6,6 +6,8 @@ A custom status line for [Claude Code](https://claude.ai/code) using the Gruvbox
  …/git/my-project  main   Sonnet 4.6   110k [████░░░░░░] 55%   you@example.com  5h:45% ( 2h30) / 7d:23% ( 4d)  $2.89  45s / 1m23s
 ```
 
+![Screenshot](screenshot.png)
+
 ## 📦 Segments
 
 | # | Content | Color |
